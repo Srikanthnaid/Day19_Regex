@@ -2,13 +2,13 @@
 import java.util.Scanner;
 import java.util.regex.Pattern;
 
-public class Password {
+public class EmailSamples {
 	Scanner s = new Scanner(System.in);
 
-	public void passWord() {
-		System.out.println("Enter password: ");
+	public void emailSample() {
+		System.out.println("Enter Email: ");
 		String PassWord = s.next();
-		Boolean result = Pattern.matches("[A-Za-z0-9`~!@#$%^&*()_|+\\-=?;:'\",.<>]{8}", PassWord);
+		Boolean result = Pattern.matches("^[A-Za-z0-9+_.-]+@(.+)$\",email", PassWord);
 		if (result) {
 			System.out.println("valid");
 		} else {
@@ -17,7 +17,7 @@ public class Password {
 	}
 
 	public static void main(String[] args) {
-		Password password = new Password();
-		password.passWord();
+		EmailSamples email = new EmailSamples();
+		email.emailSample();
 	}
 }
