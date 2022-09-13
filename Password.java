@@ -8,7 +8,7 @@ public class Password {
 	public void passWord() {
 		System.out.println("Enter password: ");
 		String PassWord = s.next();
-		Boolean result = Pattern.matches("[A-Za-z]{8}", PassWord);
+		Boolean result = Pattern.matches("[A-Za-z0-9]{8}", PassWord);
 		if (result) {
 			System.out.println("valid");
 		} else {
