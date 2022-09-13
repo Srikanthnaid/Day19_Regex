@@ -2,7 +2,7 @@
 import java.util.Scanner;
 import java.util.regex.Pattern;
 
-public class email {
+public class Email {
 	Scanner s = new Scanner(System.in);
 
 	/*
@@ -27,7 +27,7 @@ public class email {
 	}
 
 	public static void main(String[] args) {
-		email email = new email();
+		Email email = new Email();
 		email.emailCheck();
 	}
 }
